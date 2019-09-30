@@ -4077,6 +4077,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d9f27fe8b5038b94ab2453d12d115732, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  trashName1: 
+  trashName2: 
+  trashName3: 
 --- !u!1 &8839698307719544400
 GameObject:
   m_ObjectHideFlags: 0
@@ -4315,11 +4318,6 @@ PrefabInstance:
       propertyPath: m_LocalScale.y
       value: 0.65
       objectReference: {fileID: 0}
-    - target: {fileID: 2846562628562059995, guid: a0d59c048d597f149ad6f44b841738bd,
-        type: 3}
-      propertyPath: m_Mesh
-      value: 
-      objectReference: {fileID: 0}
     - target: {fileID: 2846562628562059997, guid: a0d59c048d597f149ad6f44b841738bd,
         type: 3}
       propertyPath: m_havePropertiesChanged
@@ -4329,6 +4327,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_isInputParsingRequired
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2846562628562059995, guid: a0d59c048d597f149ad6f44b841738bd,
+        type: 3}
+      propertyPath: m_Mesh
+      value: 
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a0d59c048d597f149ad6f44b841738bd, type: 3}
