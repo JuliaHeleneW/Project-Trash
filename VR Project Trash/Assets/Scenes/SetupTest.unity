@@ -1711,6 +1711,11 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 2085375284443880897, guid: f6f6f11c7d92b2d44b1ea6f5c47ef701,
         type: 3}
+    - target: {fileID: 6527196928046864977, guid: 8acef72952aca9b4398f1ebf7803a11f,
+        type: 3}
+      propertyPath: cooldown
+      value: 5
+      objectReference: {fileID: 0}
     - target: {fileID: 6449394757175861118, guid: 8acef72952aca9b4398f1ebf7803a11f,
         type: 3}
       propertyPath: m_LocalPosition.y
@@ -1920,6 +1925,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalPosition.y
       value: 0.176
+      objectReference: {fileID: 0}
+    - target: {fileID: 2997908129790018354, guid: 8acef72952aca9b4398f1ebf7803a11f,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.121
       objectReference: {fileID: 0}
     - target: {fileID: 6449394756888464338, guid: 8acef72952aca9b4398f1ebf7803a11f,
         type: 3}
