@@ -777,6 +777,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d9f27fe8b5038b94ab2453d12d115732, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  score: {fileID: 11400000, guid: 0433a8b7f71059f4791c05eb82ce4808, type: 2}
+  takePointAmount: 0
   trashName1: Trash
   trashName2: Compost
   trashName3: Recycle
