@@ -16,6 +16,7 @@ permissions and limitations under the License.
 
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.AI;
 
 /// <summary>
 /// Allows grabbing and throwing of objects with the OVRGrabbable component on them.
@@ -169,6 +170,17 @@ public class OVRGrabber : MonoBehaviour
         int refCount = 0;
         m_grabCandidates.TryGetValue(grabbable, out refCount);
         m_grabCandidates[grabbable] = refCount + 1;
+    }
+
+    void OnTriggerStay(Collider other)
+    {
+        if(other.tag.Equals("Hand"))
+        {
+            if(other.gameObject.GetComponent<NavMeshAgent>() != null)
+            {
+                other.gameObject.GetComponent<NavMeshAgent>().enabled = false;
+            }
+        }
     }
 
     void OnTriggerExit(Collider otherCollider)
