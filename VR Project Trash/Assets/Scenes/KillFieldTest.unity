@@ -415,7 +415,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   score: {fileID: 11400000, guid: 0433a8b7f71059f4791c05eb82ce4808, type: 2}
+  lives: {fileID: 11400000, guid: 50ddb8301e8f14844aff0d37296fe0d5, type: 2}
   takePointAmount: 5
+  takeLifeAmount: 3
   trashName1: Sphere
   trashName2: Cylinder
   trashName3: Cube
@@ -525,8 +527,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   score: {fileID: 11400000, guid: 0433a8b7f71059f4791c05eb82ce4808, type: 2}
+  lives: {fileID: 11400000, guid: 50ddb8301e8f14844aff0d37296fe0d5, type: 2}
   addPointAmount: 0
   takePointAmount: 5
+  takeLifeAmount: 0
   tagName: Sphere
 --- !u!64 &1754967894
 MeshCollider:
@@ -595,7 +599,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1754967892}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 5.63, z: -2.41}
+  m_LocalPosition: {x: 0, y: 5.63, z: 1.19}
   m_LocalScale: {x: 1.8304, y: 1, z: 2.4045799}
   m_Children: []
   m_Father: {fileID: 0}
