@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.AI;
 
 public class CreateTrash : MonoBehaviour
 {
@@ -8,6 +9,8 @@ public class CreateTrash : MonoBehaviour
     public Transform dumper;
     public float cooldown;
     private float cooldownRef;
+    public Transform endpoint;
+    public NavMeshAgent navAgent;
 
     // Start is called before the first frame update
     void Start()
@@ -22,6 +25,8 @@ public class CreateTrash : MonoBehaviour
         {
             cooldownRef = Time.time + cooldown;
             Instantiate(instantTrash, dumper);
+            instantTrash.GetComponent<TrashAI>().SetEndpoint(endpoint);
+            instantTrash.GetComponent<TrashAI>().SetNavAgent(navAgent);
         }
     }
 }

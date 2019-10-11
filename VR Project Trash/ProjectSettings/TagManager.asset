@@ -9,6 +9,7 @@ TagManager:
   - Trash
   - Compost
   - Recycle
+  - Endpoint
   layers:
   - Default
   - TransparentFX

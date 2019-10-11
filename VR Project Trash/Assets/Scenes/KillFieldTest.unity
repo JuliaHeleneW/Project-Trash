@@ -396,7 +396,7 @@ GameObject:
   - component: {fileID: 786782594}
   - component: {fileID: 786782593}
   m_Layer: 0
-  m_Name: Plane (1)
+  m_Name: Kill Field
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -414,6 +414,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d9f27fe8b5038b94ab2453d12d115732, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  score: {fileID: 11400000, guid: 0433a8b7f71059f4791c05eb82ce4808, type: 2}
+  takePointAmount: 5
+  trashName1: Sphere
+  trashName2: Cylinder
+  trashName3: Cube
 --- !u!64 &786782594
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -519,6 +524,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e625cb06aa932e940bbff09402f0bfe1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  score: {fileID: 11400000, guid: 0433a8b7f71059f4791c05eb82ce4808, type: 2}
+  addPointAmount: 0
+  takePointAmount: 5
   tagName: Sphere
 --- !u!64 &1754967894
 MeshCollider:
