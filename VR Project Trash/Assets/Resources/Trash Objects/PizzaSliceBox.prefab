@@ -15,6 +15,7 @@ GameObject:
   - component: {fileID: 2085375284443880897}
   - component: {fileID: 2829532435665976255}
   - component: {fileID: 762059997774157949}
+  - component: {fileID: 787793670965346853}
   m_Layer: 0
   m_Name: PizzaSliceBox
   m_TagString: Trash
@@ -94,7 +95,7 @@ BoxCollider:
   m_Enabled: 1
   serializedVersion: 2
   m_Size: {x: 0.1, y: 0.100000024, z: 0.20293108}
-  m_Center: {x: 0, y: -0.45, z: 0.031225521}
+  m_Center: {x: 0, y: 0.05, z: 0.031225521}
 --- !u!195 &2085375284443880897
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -147,6 +148,23 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
+--- !u!114 &787793670965346853
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1044521114878636440}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 02d61468f8b77ae4b92c344bc9a600fb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_allowOffhandGrab: 1
+  m_snapPosition: 0
+  m_snapOrientation: 0
+  m_snapOffset: {fileID: 0}
+  m_grabPoints: []
 --- !u!1001 &6790764809662638199
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -166,12 +184,12 @@ PrefabInstance:
     - target: {fileID: 1632604466107908749, guid: 19be85ab6178fed4f9e1e848b3024f24,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: -0.487
+      value: 0.005
       objectReference: {fileID: 0}
     - target: {fileID: 1632604466107908749, guid: 19be85ab6178fed4f9e1e848b3024f24,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: 0.038343
+      value: 0.012
       objectReference: {fileID: 0}
     - target: {fileID: 1632604466107908749, guid: 19be85ab6178fed4f9e1e848b3024f24,
         type: 3}

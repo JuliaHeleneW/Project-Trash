@@ -15,6 +15,7 @@ GameObject:
   - component: {fileID: 2085375284443880897}
   - component: {fileID: 2829532435665976255}
   - component: {fileID: 762059997774157949}
+  - component: {fileID: 442977302469611113}
   m_Layer: 0
   m_Name: GlassBottleBox
   m_TagString: Recycle
@@ -30,7 +31,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1044521114878636440}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 0, y: 0, z: -0.016}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 3290300791763606634}
@@ -94,7 +95,7 @@ BoxCollider:
   m_Enabled: 1
   serializedVersion: 2
   m_Size: {x: 0.1, y: 0.15, z: 0.1}
-  m_Center: {x: 0, y: -0.415, z: 0}
+  m_Center: {x: 0, y: 0.075, z: 0}
 --- !u!195 &2085375284443880897
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -147,6 +148,23 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
+--- !u!114 &442977302469611113
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1044521114878636440}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 02d61468f8b77ae4b92c344bc9a600fb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_allowOffhandGrab: 1
+  m_snapPosition: 0
+  m_snapOrientation: 0
+  m_snapOffset: {fileID: 0}
+  m_grabPoints: []
 --- !u!1001 &6896621402362327920
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -167,12 +185,12 @@ PrefabInstance:
     - target: {fileID: 8222666385384812314, guid: 6245595f9f5256d4eb3e2d503ec6698c,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: -0.442
+      value: 0.05
       objectReference: {fileID: 0}
     - target: {fileID: 8222666385384812314, guid: 6245595f9f5256d4eb3e2d503ec6698c,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: 0
+      value: 0.014
       objectReference: {fileID: 0}
     - target: {fileID: 8222666385384812314, guid: 6245595f9f5256d4eb3e2d503ec6698c,
         type: 3}
@@ -229,12 +247,12 @@ PrefabInstance:
       propertyPath: m_LocalScale.z
       value: 1
       objectReference: {fileID: 0}
-    - target: {fileID: 422094459788336732, guid: 6245595f9f5256d4eb3e2d503ec6698c,
+    - target: {fileID: 7315994627147756504, guid: 6245595f9f5256d4eb3e2d503ec6698c,
         type: 3}
       propertyPath: m_Enabled
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 7315994627147756504, guid: 6245595f9f5256d4eb3e2d503ec6698c,
+    - target: {fileID: 422094459788336732, guid: 6245595f9f5256d4eb3e2d503ec6698c,
         type: 3}
       propertyPath: m_Enabled
       value: 0

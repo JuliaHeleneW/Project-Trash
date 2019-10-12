@@ -15,6 +15,7 @@ GameObject:
   - component: {fileID: 2085375284443880897}
   - component: {fileID: 2829532435665976255}
   - component: {fileID: 762059997774157949}
+  - component: {fileID: 5066385332604565661}
   m_Layer: 0
   m_Name: BananaPeelBox
   m_TagString: Compost
@@ -94,7 +95,7 @@ BoxCollider:
   m_Enabled: 1
   serializedVersion: 2
   m_Size: {x: 0.1, y: 0.1, z: 0.1}
-  m_Center: {x: 0, y: -0.45, z: 0}
+  m_Center: {x: 0, y: 0.05, z: 0}
 --- !u!195 &2085375284443880897
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -147,6 +148,23 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
+--- !u!114 &5066385332604565661
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1044521114878636440}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 02d61468f8b77ae4b92c344bc9a600fb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_allowOffhandGrab: 1
+  m_snapPosition: 0
+  m_snapOrientation: 0
+  m_snapOffset: {fileID: 0}
+  m_grabPoints: []
 --- !u!1001 &3115508126951379390
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -166,7 +184,7 @@ PrefabInstance:
     - target: {fileID: 2812379236287910167, guid: b9b1058a0e5fe1142b236b6f6888d120,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: -0.493
+      value: 0.02
       objectReference: {fileID: 0}
     - target: {fileID: 2812379236287910167, guid: b9b1058a0e5fe1142b236b6f6888d120,
         type: 3}
@@ -228,14 +246,6 @@ PrefabInstance:
       propertyPath: m_LocalScale.z
       value: 0.05
       objectReference: {fileID: 0}
-    - target: {fileID: 49472550, guid: b9b1058a0e5fe1142b236b6f6888d120, type: 3}
-      propertyPath: m_Enabled
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 49472549, guid: b9b1058a0e5fe1142b236b6f6888d120, type: 3}
-      propertyPath: m_Enabled
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 6483834766660186079, guid: b9b1058a0e5fe1142b236b6f6888d120,
         type: 3}
       propertyPath: m_LocalScale.x
@@ -250,6 +260,14 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalScale.z
       value: 0.2
+      objectReference: {fileID: 0}
+    - target: {fileID: 49472550, guid: b9b1058a0e5fe1142b236b6f6888d120, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 49472549, guid: b9b1058a0e5fe1142b236b6f6888d120, type: 3}
+      propertyPath: m_Enabled
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 8153022250157484022, guid: b9b1058a0e5fe1142b236b6f6888d120, type: 3}

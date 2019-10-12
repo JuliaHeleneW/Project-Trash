@@ -174,7 +174,7 @@ public class OVRGrabber : MonoBehaviour
 
     void OnTriggerStay(Collider other)
     {
-        if(other.tag.Equals("Hand"))
+        if(!other.tag.Equals("Hand"))
         {
             if(other.gameObject.GetComponent<NavMeshAgent>() != null)
             {

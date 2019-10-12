@@ -15,6 +15,7 @@ GameObject:
   - component: {fileID: 2085375284443880897}
   - component: {fileID: 2829532435665976255}
   - component: {fileID: 762059997774157949}
+  - component: {fileID: 2453296938072457536}
   m_Layer: 0
   m_Name: SodaBox
   m_TagString: Recycle
@@ -94,7 +95,7 @@ BoxCollider:
   m_Enabled: 1
   serializedVersion: 2
   m_Size: {x: 0.1, y: 0.1, z: 0.1}
-  m_Center: {x: 0, y: -0.45, z: 0}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!195 &2085375284443880897
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -147,6 +148,23 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
+--- !u!114 &2453296938072457536
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1044521114878636440}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 02d61468f8b77ae4b92c344bc9a600fb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_allowOffhandGrab: 1
+  m_snapPosition: 0
+  m_snapOrientation: 0
+  m_snapOffset: {fileID: 0}
+  m_grabPoints: []
 --- !u!1001 &4264320547143701650
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -166,7 +184,7 @@ PrefabInstance:
     - target: {fileID: 3845726250690504070, guid: e89c22f9b7f527243b2e871cc021094e,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: -0.453
+      value: -0.025
       objectReference: {fileID: 0}
     - target: {fileID: 3845726250690504070, guid: e89c22f9b7f527243b2e871cc021094e,
         type: 3}
@@ -228,11 +246,11 @@ PrefabInstance:
       propertyPath: m_LocalScale.z
       value: 0.01
       objectReference: {fileID: 0}
-    - target: {fileID: 1360828317, guid: e89c22f9b7f527243b2e871cc021094e, type: 3}
+    - target: {fileID: 1360828316, guid: e89c22f9b7f527243b2e871cc021094e, type: 3}
       propertyPath: m_Enabled
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 1360828316, guid: e89c22f9b7f527243b2e871cc021094e, type: 3}
+    - target: {fileID: 1360828317, guid: e89c22f9b7f527243b2e871cc021094e, type: 3}
       propertyPath: m_Enabled
       value: 0
       objectReference: {fileID: 0}
