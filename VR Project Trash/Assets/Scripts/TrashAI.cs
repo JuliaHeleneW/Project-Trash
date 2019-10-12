@@ -12,13 +12,17 @@ public class TrashAI : MonoBehaviour
     void Start()
     {
         navMeshAgent = this.gameObject.GetComponent<NavMeshAgent>();
+
         //endPoint = GameObject.FindGameObjectWithTag("Endpoint").transform;
     }
 
     // Update is called once per frame
     void Update()
     {
-        navMeshAgent.SetDestination(endPoint.position);
+        if (navMeshAgent != null)
+        {
+            navMeshAgent.SetDestination(endPoint.position);
+        }
     }
 
     public void SetEndpoint(Transform e)

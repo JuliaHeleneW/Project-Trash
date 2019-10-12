@@ -60,12 +60,13 @@ public class CreateTrash : MonoBehaviour
         cooldownRef = Time.time + cooldown;
 
         trash.transform.position = dumper.position;
+        //trash.transform.localPosition.y = 1.400002f;
 
         //foreach(Transform child in trash.transform)
         //{
-            //if (child.GetComponent<TrashAI>() != null)
-            //{
-                trash.GetComponent<TrashAI>().SetEndpoint(endpoint);
+        //if (child.GetComponent<TrashAI>() != null)
+        //{
+        trash.GetComponent<TrashAI>().SetEndpoint(endpoint);
                 //trash.GetComponent<TrashAI>().SetNavAgent(navAgent);
             //}
         //}
