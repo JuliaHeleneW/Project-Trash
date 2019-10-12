@@ -10,6 +10,7 @@ TagManager:
   - Compost
   - Recycle
   - Endpoint
+  - Hand
   layers:
   - Default
   - TransparentFX
