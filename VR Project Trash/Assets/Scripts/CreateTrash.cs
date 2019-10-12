@@ -40,7 +40,7 @@ public class CreateTrash : MonoBehaviour
     {
         if (Time.time > cooldownRef)
         {
-            Debug.Log("Spawning...");
+            //Debug.Log("Spawning...");
             SpawnRandomObject();
 
             /*
@@ -60,8 +60,14 @@ public class CreateTrash : MonoBehaviour
         cooldownRef = Time.time + cooldown;
 
         trash.transform.position = dumper.position;
-        trash.GetComponent<TrashAI>().SetEndpoint(endpoint);
-        trash.GetComponent<TrashAI>().SetNavAgent(navAgent);
 
+        //foreach(Transform child in trash.transform)
+        //{
+            //if (child.GetComponent<TrashAI>() != null)
+            //{
+                trash.GetComponent<TrashAI>().SetEndpoint(endpoint);
+                //trash.GetComponent<TrashAI>().SetNavAgent(navAgent);
+            //}
+        //}
     }
 }

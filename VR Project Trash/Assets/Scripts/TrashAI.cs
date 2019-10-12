@@ -11,7 +11,7 @@ public class TrashAI : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        //navMeshAgent = this.gameObject.GetComponent<NavMeshAgent>();
+        navMeshAgent = this.gameObject.GetComponent<NavMeshAgent>();
         //endPoint = GameObject.FindGameObjectWithTag("Endpoint").transform;
     }
 
