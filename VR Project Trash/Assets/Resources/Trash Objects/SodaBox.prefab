@@ -172,10 +172,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 7107250792543647169}
     m_Modifications:
-    - target: {fileID: 1360828315, guid: e89c22f9b7f527243b2e871cc021094e, type: 3}
-      propertyPath: m_Name
-      value: Soda Can Base Mesh
-      objectReference: {fileID: 0}
     - target: {fileID: 3845726250690504070, guid: e89c22f9b7f527243b2e871cc021094e,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -246,6 +242,10 @@ PrefabInstance:
       propertyPath: m_LocalScale.z
       value: 0.01
       objectReference: {fileID: 0}
+    - target: {fileID: 1360828315, guid: e89c22f9b7f527243b2e871cc021094e, type: 3}
+      propertyPath: m_Name
+      value: Soda Can Base Mesh
+      objectReference: {fileID: 0}
     - target: {fileID: 1360828316, guid: e89c22f9b7f527243b2e871cc021094e, type: 3}
       propertyPath: m_Enabled
       value: 0
@@ -254,6 +254,11 @@ PrefabInstance:
       propertyPath: m_Enabled
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 7448649606501674464, guid: e89c22f9b7f527243b2e871cc021094e,
+        type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 8261416bfd313ba41bf4113a2c5669f2, type: 2}
     m_RemovedComponents:
     - {fileID: 5264609737772153856, guid: e89c22f9b7f527243b2e871cc021094e, type: 3}
     - {fileID: 655244269521816098, guid: e89c22f9b7f527243b2e871cc021094e, type: 3}

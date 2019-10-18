@@ -94,8 +94,8 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 0.2231874, y: 0.21416995, z: 0.22299767}
-  m_Center: {x: -0.0019695386, y: 0.0075650364, z: -0.0007355362}
+  m_Size: {x: 0.2231874, y: 0.21170905, z: 0.22299767}
+  m_Center: {x: -0.0019695386, y: 0.10723327, z: -0.0007355362}
 --- !u!195 &2085375284443880897
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -182,7 +182,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: e2e7984efc19d1b4abdfd243ab1a3ff4, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0.005
+      value: 0.1067
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: e2e7984efc19d1b4abdfd243ab1a3ff4, type: 3}
       propertyPath: m_LocalPosition.z
@@ -232,6 +232,10 @@ PrefabInstance:
       propertyPath: m_LocalScale.z
       value: 0.1
       objectReference: {fileID: 0}
+    - target: {fileID: 2300000, guid: e2e7984efc19d1b4abdfd243ab1a3ff4, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 8261416bfd313ba41bf4113a2c5669f2, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e2e7984efc19d1b4abdfd243ab1a3ff4, type: 3}
 --- !u!4 &7222516184750050826 stripped

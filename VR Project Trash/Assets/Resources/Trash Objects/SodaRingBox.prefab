@@ -172,10 +172,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 7107250792543647169}
     m_Modifications:
-    - target: {fileID: 219545376, guid: 374f4f6e95fb7d540adc4bc08e0e65ee, type: 3}
-      propertyPath: m_Name
-      value: Soda Ring Base Mesh
-      objectReference: {fileID: 0}
     - target: {fileID: 198985200621910107, guid: 374f4f6e95fb7d540adc4bc08e0e65ee,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -246,6 +242,10 @@ PrefabInstance:
       propertyPath: m_LocalScale.z
       value: 0.05
       objectReference: {fileID: 0}
+    - target: {fileID: 219545376, guid: 374f4f6e95fb7d540adc4bc08e0e65ee, type: 3}
+      propertyPath: m_Name
+      value: Soda Ring Base Mesh
+      objectReference: {fileID: 0}
     - target: {fileID: 219545379, guid: 374f4f6e95fb7d540adc4bc08e0e65ee, type: 3}
       propertyPath: m_Enabled
       value: 0
@@ -254,6 +254,11 @@ PrefabInstance:
       propertyPath: m_Enabled
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 3145513272665884503, guid: 374f4f6e95fb7d540adc4bc08e0e65ee,
+        type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 8261416bfd313ba41bf4113a2c5669f2, type: 2}
     m_RemovedComponents:
     - {fileID: 5307551101521801026, guid: 374f4f6e95fb7d540adc4bc08e0e65ee, type: 3}
     - {fileID: 2310857713748586273, guid: 374f4f6e95fb7d540adc4bc08e0e65ee, type: 3}

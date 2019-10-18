@@ -5,7 +5,7 @@ using UnityEngine.UI;
 
 public class ScoreScript : MonoBehaviour
 {
-    public Text Score;
+    public TextMesh Score;
     public Score s;
 
     // Update is called once per frame

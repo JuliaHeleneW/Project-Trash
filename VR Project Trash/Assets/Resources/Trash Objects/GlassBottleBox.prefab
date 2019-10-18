@@ -172,11 +172,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 7107250792543647169}
     m_Modifications:
-    - target: {fileID: 319900012866284295, guid: 6245595f9f5256d4eb3e2d503ec6698c,
-        type: 3}
-      propertyPath: m_Name
-      value: Glass Bottle
-      objectReference: {fileID: 0}
     - target: {fileID: 8222666385384812314, guid: 6245595f9f5256d4eb3e2d503ec6698c,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -247,6 +242,11 @@ PrefabInstance:
       propertyPath: m_LocalScale.z
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 319900012866284295, guid: 6245595f9f5256d4eb3e2d503ec6698c,
+        type: 3}
+      propertyPath: m_Name
+      value: Glass Bottle
+      objectReference: {fileID: 0}
     - target: {fileID: 7315994627147756504, guid: 6245595f9f5256d4eb3e2d503ec6698c,
         type: 3}
       propertyPath: m_Enabled
@@ -257,6 +257,11 @@ PrefabInstance:
       propertyPath: m_Enabled
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 5992372942621830576, guid: 6245595f9f5256d4eb3e2d503ec6698c,
+        type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 8261416bfd313ba41bf4113a2c5669f2, type: 2}
     m_RemovedComponents:
     - {fileID: 1425004351735678739, guid: 6245595f9f5256d4eb3e2d503ec6698c, type: 3}
     - {fileID: 8301960098641902657, guid: 6245595f9f5256d4eb3e2d503ec6698c, type: 3}
