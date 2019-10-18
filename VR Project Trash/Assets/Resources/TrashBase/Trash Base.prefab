@@ -14,10 +14,9 @@ GameObject:
   - component: {fileID: 7505042077741566954}
   - component: {fileID: 2085375284443880897}
   - component: {fileID: 2829532435665976255}
-  - component: {fileID: 1797537233797163244}
   - component: {fileID: 762059997774157949}
   m_Layer: 0
-  m_Name: Trash
+  m_Name: Trash Base
   m_TagString: Trash
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -31,7 +30,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1044521114878636440}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.59375, y: 1.1899414, z: -4.1572266}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -131,19 +130,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   endPoint: {fileID: 0}
   navMeshAgent: {fileID: 2085375284443880897}
---- !u!65 &1797537233797163244
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1044521114878636440}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 1
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 1.2, y: 1.2, z: 1.2}
-  m_Center: {x: 0, y: 0, z: 0}
 --- !u!54 &762059997774157949
 Rigidbody:
   m_ObjectHideFlags: 0
