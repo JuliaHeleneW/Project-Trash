@@ -27,6 +27,7 @@ public class OVRGrabber : MonoBehaviour
     // Grip trigger thresholds for picking up objects, with some hysteresis.
     public float grabBegin = 0.55f;
     public float grabEnd = 0.35f;
+    public float tossMultiplier;
 
     // Demonstrates parenting the held object to the hand's transform when grabbed.
     // When false, the grabbed object is moved every FixedUpdate using MovePosition.
@@ -328,8 +329,8 @@ public class OVRGrabber : MonoBehaviour
             localPose = localPose * offsetPose;
 
 			OVRPose trackingSpace = transform.ToOVRPose() * localPose.Inverse();
-			Vector3 linearVelocity = trackingSpace.orientation * OVRInput.GetLocalControllerVelocity(m_controller);
-			Vector3 angularVelocity = trackingSpace.orientation * OVRInput.GetLocalControllerAngularVelocity(m_controller);
+			Vector3 linearVelocity = trackingSpace.orientation * (OVRInput.GetLocalControllerVelocity(m_controller)* tossMultiplier);
+			Vector3 angularVelocity = trackingSpace.orientation * (OVRInput.GetLocalControllerAngularVelocity(m_controller)* tossMultiplier);
 
             GrabbableRelease(linearVelocity, angularVelocity);
         }
