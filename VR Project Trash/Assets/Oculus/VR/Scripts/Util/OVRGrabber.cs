@@ -172,17 +172,6 @@ public class OVRGrabber : MonoBehaviour
         m_grabCandidates[grabbable] = refCount + 1;
     }
 
-    void OnTriggerStay(Collider other)
-    {
-        if(!other.tag.Equals("Hand"))
-        {
-            if(other.gameObject.GetComponent<NavMeshAgent>() != null)
-            {
-                other.gameObject.GetComponent<NavMeshAgent>().enabled = false;
-            }
-        }
-    }
-
     void OnTriggerExit(Collider otherCollider)
     {
 		OVRGrabbable grabbable = otherCollider.GetComponent<OVRGrabbable>() ?? otherCollider.GetComponentInParent<OVRGrabbable>();

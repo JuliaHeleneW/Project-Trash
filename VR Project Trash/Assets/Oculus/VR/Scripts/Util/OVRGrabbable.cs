@@ -16,6 +16,7 @@ permissions and limitations under the License.
 
 using System;
 using UnityEngine;
+using UnityEngine.AI;
 
 /// <summary>
 /// An object that can be grabbed and thrown by OVRGrabber.
@@ -159,6 +160,17 @@ public class OVRGrabbable : MonoBehaviour
         {
             // Notify the hand to release destroyed grabbables
             m_grabbedBy.ForceRelease(this);
+        }
+    }
+
+    void OnTriggerStay(Collider other)
+    {
+        if (other.tag.Equals("Hand"))
+        {
+            if (this.gameObject.GetComponent<NavMeshAgent>() != null)
+            {
+                this.gameObject.GetComponent<NavMeshAgent>().enabled = false;
+            }
         }
     }
 }
